@@ -1,0 +1,35 @@
+#include<iostream>
+using namespace std;
+class employee
+{
+public:
+string employee_name;
+int employee_id;
+float salary;
+
+void display()
+{
+cout<<"---EMPLOYEE DETAILS---";
+
+cin.ignore();
+cout<<"Enter the name of the employee: ";
+cin>>employee_name;
+getline(cin, employee_name);
+
+cout<<"Enter the employee id: ";
+cin>>employee_id;
+
+cout<<"Enter the salary of the employee: ";
+cin>>salary;
+}
+};
+int main()
+{
+employee e1;
+e1.employee_name;
+e1.employee_id;
+e1.salary;
+e1.display();
+return 0;
+}
+
