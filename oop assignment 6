@@ -7,6 +7,7 @@ int empID;
 string name;
 float salary;
 public:
+
 Employee(int id,string n,float s)
 {
 empID = id;
@@ -14,19 +15,24 @@ name = n;
 salary = s;
 
 cout<<"Employee record created"<<endl;
-cout<<"ID: "<<id<<endl;
-cout<<"Name: "<<name<<endl;
-cout<<"Salary: "<<salary<<endl;
 }
+
 ~Employee()
 {
 cout<<"Employee record remove from memory."<<endl;
 }
+
+void display()
+{
+cout<<"Id of the employee is: "<<empID<<endl;
+cout<<"Name of the employee is: "<<name<<endl;
+cout<<"Salary of the employee is: "<<salary<<endl;
+}
 };
 int main()
 {
-{
 Employee e1(101,"xyz",45000);
-}
+e1.display();
 return 0;
 }
+
