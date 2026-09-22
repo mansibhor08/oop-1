@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+
+class Employee
+{
+int empID;
+string name;
+float salary;
+public:
+Employee(int id,string n,float s)
+{
+empID = id;
+name = n;
+salary = s;
+
+cout<<"Employee record created"<<endl;
+cout<<"ID: "<<id<<endl;
+cout<<"Name: "<<name<<endl;
+cout<<"Salary: "<<salary<<endl;
+}
+~Employee()
+{
+cout<<"Employee record remove from memory."<<endl;
+}
+};
+int main()
+{
+{
+Employee e1(101,"xyz",45000);
+}
+return 0;
+}
