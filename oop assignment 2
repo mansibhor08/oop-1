@@ -1,35 +1,46 @@
 #include<iostream>
 using namespace std;
+
 class employee
 {
 public:
-string employee_name;
-int employee_id;
-float salary;
+ int id;
+ string Name;
+ float Salary;
+ string Department;
+
+
+void input()
+{
+ cout<<"ID of the employee:"<<endl;
+ cin>>id;
+ cout<<"Name of the employee:"<<endl;
+ cin>>Name;
+ cout<<"Salary of  the employee:"<<endl;
+ cin>>Salary;
+ cout<<"Department of the employee:"<<endl;
+ cin>>Department;
+}
 
 void display()
 {
-cout<<"---EMPLOYEE DETAILS---";
-
-cin.ignore();
-cout<<"Enter the name of the employee: ";
-cin>>employee_name;
-getline(cin, employee_name);
-
-cout<<"Enter the employee id: ";
-cin>>employee_id;
-
-cout<<"Enter the salary of the employee: ";
-cin>>salary;
+cout<<"*********EMPLOYEE DETAILS*********"<<endl;
+cout<<"ID of employee:"<<id<<endl;
+cout<<"Name of employee:"<<Name<<endl;
+cout<<"Salary of employee:"<<Salary<<endl;
+cout<<"Department of employee:"<<Department<<endl;
 }
 };
-int main()
+ int main()
 {
-employee e1;
-e1.employee_name;
-e1.employee_id;
-e1.salary;
-e1.display();
-return 0;
-}
 
+ employee e1;
+ employee e2;
+
+ e1.input();
+ e1.display();
+ e2.input();
+ e2.display();
+
+ return 0;
+}
