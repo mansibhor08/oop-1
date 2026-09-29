@@ -1,32 +1,29 @@
 #include<iostream>
-#include<string>
 using namespace std;
-
 class book
 {
 public:
-    string Title;
-    int Book_ID;
-    float Price;
+string title;
+int book_id;
+float prize;
 
-    void display()
-    {
-    cout<<"Enter title of the book: ";
-    cin.ignore();
-    getline(cin, Title);
-
-    cout<<"Enter book ID: ";
-    cin>>Book_ID;
-
-    cout<<"Enter price of the book: ";
-    cin>>Price;
-
-    }
+void display()
+{
+cout<<"\n---BOOK DETAILS---"<<endl;
+cout<<"Title of the book: "<<title<<endl;
+cout<<"Book ID: "<<book_id<<endl;
+cout<<"Prize of the book: "<<prize<<endl;
+}
 };
-
- int main()
+int main()
 {
 book b1;
+cout<<"Enter the title: "<<endl;
+cin>>b1.title;
+cout<<"Enter the book id: "<<endl;
+cin>>b1.book_id;
+cout<<"Enter prize of the book: "<<endl;
+cin>>b1.prize;
 b1.display();
 return 0;
 }
